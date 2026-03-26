@@ -9,50 +9,66 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #f8fafc;
-    color: #1e293b;
+    background: #0f172a;
+    color: white;
 }
 
 /* HEADER */
 header {
     text-align: center;
-    padding: 40px 20px;
-    background: white;
-    border-bottom: 1px solid #e2e8f0;
+    padding: 50px 20px;
+    background: linear-gradient(90deg, #06b6d4, #3b82f6);
+}
+
+header img {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 3px solid white;
 }
 
 h1 {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
-.subtitle {
-    color: #64748b;
+p {
+    line-height: 1.6;
 }
 
 /* SECTION */
 section {
-    max-width: 800px;
+    padding: 30px;
+    max-width: 900px;
     margin: auto;
-    padding: 25px;
-}
-
-h2 {
-    border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 5px;
-    margin-top: 30px;
 }
 
 .card {
-    background: white;
-    padding: 18px;
-    margin-top: 15px;
-    border-radius: 8px;
-    border: 1px solid #e2e8f0;
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background: #38bdf8;
+    padding: 10px 18px;
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* LINKS */
 a {
-    color: #2563eb;
+    color: #38bdf8;
     text-decoration: none;
 }
 </style>
@@ -61,21 +77,23 @@ a {
 
 <body>
 
+<!-- HEADER -->
 <header>
     <h1>Mohammed Sohail</h1>
-    <p class="subtitle">Aspiring Data Analyst | Excel | SQL | Python</p>
+    <p>Aspiring Data Analyst | Excel | SQL | Python | Power BI</p>
 </header>
 
+<!-- ABOUT -->
 <section>
-
-<h2>About</h2>
-<div class="card">
-<p>
-I am a BCA graduate currently working at ICICI Prudential AMC with hands-on experience in financial data handling and analysis.
-
-I am passionate about data analytics and skilled in Excel, SQL, and Python. I enjoy working with data, building dashboards, and extracting insights for better decision-making.
-</p>
-</div>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        I am a BCA graduate currently working at ICICI Prudential AMC with hands-on experience in financial data handling and analysis.  
+        <br><br>
+        I am passionate about data analytics and skilled in Excel, SQL, and Python. I enjoy working with data, building dashboards, and finding insights that support decision-making.
+        </p>
+    </div>
+    <!-- EDUCATION -->
     <h2>Education</h2>
 <div class="card">
 <p>
@@ -85,34 +103,39 @@ Vijayanagara Sri Krishnadevaraya University<br>
 </p>
 </div>
 
-<h2>Skills</h2>
-<div class="card">
-<p>
-• Microsoft Excel (Pivot Tables, VLOOKUP, Data Cleaning)<br>
-• SQL (Basic Queries, Joins)<br>
-• Python (Pandas, NumPy – Basics)<br>
-• Power BI (Basic Dashboard Creation)<br>
-• Data Analysis & Visualization
-</p>
-</div>
+    <!-- SKILLS -->
+    <h2>Skills</h2>
+    <div class="card">
+        <p>
+        ✔ Microsoft Excel (Pivot Tables, VLOOKUP, Data Cleaning)<br>
+        ✔ SQL (Basic Queries, Joins)<br>
+        ✔ Python (Pandas, NumPy – Basics)<br>
+        ✔ Power BI (Basic Dashboard Creation)<br>
+        ✔ Data Analysis & Visualization
+        </p>
+    </div>
 
-<h2>Projects</h2>
-<div class="card">
-<h3>Finance Dashboard – Personal Finance Analysis</h3>
-<p>
-• Collected, cleaned, and analyzed financial data<br>
-• Built interactive dashboard using Excel<br>
-• Visualized income vs expenses<br>
-• Identified key financial trends
-</p>
-</div>
+    <!-- PROJECTS -->
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Finance Dashboard – Personal Finance Analysis</h3>
+        <p>
+        • Cleaned and analyzed financial dataset<br>
+        • Built interactive dashboard using Excel<br>
+        • Visualized income vs expenses<br>
+        • Identified key financial trends
+        </p>
+    </div>
 
-<h2>Contact</h2>
-<div class="card">
-<p>Email: mohdsohail96638@gmail.com</p>
-<p>GitHub: <a href="https://github.com/mohammedsohail45" target="_blank">github.com/mohammedsohail45</a></p>
-<p>LinkedIn: <a href="https://linkedin.com/in/sohail-bca" target="_blank">linkedin.com/in/sohail-bca</a></p>
-</div>
+    <!-- CONTACT -->
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: mohdsohail96638@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/mohammedsohail45" target="_blank">Visit GitHub</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/sohail-bca" target="_blank">Visit LinkedIn</a></p>
+
+        <a href="mailto:mohdsohail96638@gmail.com" class="btn" target="_blank">Hire Me 🚀</a>
+    </div>
 
 </section>
 
